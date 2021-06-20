@@ -39,17 +39,17 @@ public class CreaPass {
 	}
 	
 	public String esSegura() {
-	int minus=0;
-	int mayus=0;
-	int num=0;
+	int minusculas=0;
+	int mayusculas=0;
+	int numeros=0;
 		for(int i=0;i<password.length();i++) {
 			if(Character.isLowerCase(password.charAt(i))) {
-				minus+=1;
+				minusculas+=1;
 			}else if( Character.isUpperCase(password.charAt(i))) {
-				mayus+=1;
+				mayusculas+=1;
 				
 			}else {
-				num+=1;
+				numeros+=1;
 			}
 		}
 		if(num>=4 && minus>=1 && mayus>=2) {
